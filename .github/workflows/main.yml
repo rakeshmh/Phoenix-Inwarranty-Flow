@@ -14,12 +14,17 @@ jobs:
 
    steps:
      - name: Checkout the code
-       uses: actions/checkout@v4.2.2
+       uses: actions/checkout@v4
 
      - name: Install node js and npm
        uses: actions/checkout@v4
        with:
          node-version: '22'
+         
+     - name: Verify Node and npm
+       run: |
+          node -v
+          npm -v    
          
      - name: Install newman and HTML-extra globally
        run: |
