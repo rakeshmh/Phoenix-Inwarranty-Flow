@@ -21,11 +21,6 @@ jobs:
        with:
          node-version: '22'
          
-     - name: Verify Node and npm
-       run: |
-          node -v
-          npm -v    
-         
      - name: Install newman and HTML-extra globally
        run: |
              npm install -g newman
